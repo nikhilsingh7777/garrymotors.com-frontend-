@@ -1,0 +1,114 @@
+.card {
+    /* background-color: #f5f5f5; */
+    background: linear-gradient(45deg, #2e2a2a, #061581);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    color: white;
+}
+
+.card:hover {
+    transition: transform 0.5s, box-shadow 0.5s;
+    transform: scale(1.05) rotateY(10deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.right h2, .right p {
+    margin: 0;
+    color: #333;
+}
+
+.contact a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.right {
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    /* padding: 25px; */
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(244, 228, 199);
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #22ABC3;
+    text-align: center;
+}
+
+.image {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.specs {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+}
+
+.hr {
+    margin: 10px 5px;
+}
+
+.desc {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.delete {
+    padding: 20px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.delete:hover {
+    background-color: rgb(175, 15, 15);
+}
+
+
+
+
+
+@media screen and (min-width: 700px) {
+    .content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .specs {
+        flex-grow: 1;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .title {
+        text-align: center;
+    }
+}

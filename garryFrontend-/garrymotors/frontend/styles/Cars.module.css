@@ -1,0 +1,32 @@
+.container {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carimg {
+  width: 100vw;
+  margin-top: -50px;
+  margin-bottom: 80px;
+}
+
+.carimgs {
+  width: 100vw;
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .carimg {
+    display: none;
+    object-fit: contain;
+    object-position: center;
+  }
+  .carimgs {
+    display: block;
+    margin-top: -160px;
+    margin-bottom:-60px;
+    object-fit: contain;
+    object-position: center; 
+  }
+}

@@ -1,0 +1,30 @@
+.container {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carimg {
+    width: 100vw;
+    margin-top: -50px;
+    margin-bottom: 80px;
+  }
+  
+  .carimgs {
+    width: 100vw;
+    display: none;
+  }
+  
+  
+  @media (max-width: 550px) {
+    .carimg {
+      display: none;
+    }
+  
+    .carimgs {
+      display: block;
+      margin-top: -50px;
+      margin-bottom: 40px;
+    }
+  }

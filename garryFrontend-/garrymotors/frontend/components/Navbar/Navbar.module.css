@@ -1,0 +1,241 @@
+.topc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 12px 0px;
+}
+
+.tcont {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.topdiv {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.topopt {
+  font-weight: bold;
+}
+
+.topopt a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  transition: 0.5s all ease;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+
+.navbars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.19);
+  color: white;
+  transition: 0.5s all ease;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+
+.mainhead {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgb(14, 12, 12);
+  display: none;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.links.active {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.option {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 16px;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.option:hover {
+  color: #22ABC3;
+}
+
+.menuIcon {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.activeLink {
+  color: #22ABC3;
+}
+
+.closeIcon {
+  display: none;
+  cursor: pointer;
+  font-size: 36px;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    padding: 10px 40px;
+  }
+
+  .logo {
+    font-size: 25px;
+    margin-bottom: 0;
+    text-align:left;
+    display: block;
+  }
+
+  .links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .option {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    padding: 15px;
+  }
+
+  .topc p {
+    font-size: 1rem;
+
+  }
+
+  .tcont {
+    padding: -2px;
+      justify-content: center;
+  }
+
+  .option {
+    font-size: 1.8rem;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    min-height: 100vh;
+    justify-content: c;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbar {
+    color: white;
+  }
+
+  .tcont {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .menuIcon {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links.active {
+    display: flex;
+  }
+
+  .closeIcon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .tcont {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .tcont {
+    font-size: 14px;
+  }
+}

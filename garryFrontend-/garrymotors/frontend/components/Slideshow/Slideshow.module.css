@@ -1,0 +1,15 @@
+.slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+    .slider {
+        width: auto;
+        height: auto;
+    }
+}
+
+

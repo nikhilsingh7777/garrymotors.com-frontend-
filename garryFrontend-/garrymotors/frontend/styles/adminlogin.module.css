@@ -1,0 +1,145 @@
+/* Define keyframes for rainbow border effect */
+@keyframes rainbow-border {
+    0% {
+        border-color: red;
+    }
+    16.7% {
+        border-color: orange;
+    }
+    33.3% {
+        border-color: yellow;
+    }
+    50% {
+        border-color: green;
+    }
+    66.7% {
+        border-color: blue;
+    }
+    83.3% {
+        border-color: indigo;
+    }
+    100% {
+        border-color: violet;
+    }
+}
+
+/* Main container */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #22ABC3 0%, #1a9ab0 100%); /* Gradient background */
+    cursor: url('https://img.icons8.com/?size=35&id=43151&format=png&color=000000'), auto;
+}
+.h1{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/carlogin.jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Reduced opacity for background image */
+    z-index: -1;
+}
+
+/* Login form wrapper */
+.wrapper {
+    width: 360px;
+    background: rgba(255, 255, 255, 0.95); /* Slightly transparent white background */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    padding: 40px;
+    animation: float 5s ease-in-out infinite, rainbow-border 7s linear infinite, pulse 2s infinite; /* Added rainbow-border animation */
+}
+
+/* Header styling */
+.h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #22ABC3; /* Primary color */
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+}
+
+/* Input box styling */
+.inputbox {
+    position: relative;
+    margin: 20px 0;
+}
+
+/* Input field styling */
+.input {
+    width: 100%;
+    height: 45px;
+    background: #f9f9f9; /* Light gray background for input fields */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    padding: 10px 20px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus styling */
+.input:focus {
+    border-color: #22ABC3; /* Highlight border on focus */
+    box-shadow: 0 0 8px rgba(34, 171, 195, 0.3); /* Subtle glow effect */
+    outline: none; /* Remove default outline */
+}
+
+/* Placeholder text styling */
+.input::placeholder {
+    color: #888; /* Lighter placeholder text */
+}
+
+/* Button styling */
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #22ABC3; /* Primary color for button */
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Button hover effects */
+.btn:hover {
+    background-color: #1a9ab0; /* Darker shade on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+}
+
+/* Icon styling within input */
+.icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #333;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+}

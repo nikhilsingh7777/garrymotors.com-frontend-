@@ -1,0 +1,42 @@
+.container {
+  padding: 20px 0;
+  /* min-height: 100vh; */
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  margin-bottom: 60px;
+}
+
+.imgi, .img, .imgs {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.imgs {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .img {
+    display: none;
+  }
+
+  .imgs {
+    display: block;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  .carimg, .carimgs {
+    width: 100%;
+    height: auto;
+  }
+  .carimg, .carimgs {
+    object-fit: cover;
+    object-position: center;
+  }
+}
