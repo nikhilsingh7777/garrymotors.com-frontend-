@@ -21,7 +21,7 @@ const Cars = () => {
     } else {
       const fetchCars = async () => {
         try {
-          const response = await newRequest.get('/api/car');
+             const response = await newRequest.get('/car');
           setCars(response.data);
         } catch (error) {
           console.error('Error fetching cars:', error);
