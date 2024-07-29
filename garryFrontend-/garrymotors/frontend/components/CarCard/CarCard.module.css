@@ -1,33 +1,33 @@
 /* Base styling for the car card */
 .card {
-  background: linear-gradient(45deg, #2e2a2a, #061581);
+  background: #fff;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 40px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 95%;
-  color: white;
+  color: #333;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Title styling */
 .title {
   margin-bottom: 20px;
-  font-size: 28px;
+  font-size: 24px;
   text-transform: uppercase;
-  color: #22ABC3;
+  color: #007BFF;
   text-align: center;
 }
 
 /* Image styling */
 .image {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   margin-bottom: 20px;
   border-radius: 10px;
   cursor: pointer;
@@ -35,7 +35,7 @@
 }
 
 .image:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* Content styling */
@@ -58,12 +58,13 @@
 .hr {
   width: 80%;
   margin: 10px 0;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #ccc;
 }
 
 .desc {
   font-weight: bold;
   letter-spacing: 1px;
+  color: #666;
 }
 
 /* Right section styling */
@@ -73,7 +74,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #64cadc;
+  background-color: #f8f9fa;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 10px;
@@ -83,10 +84,49 @@
 
 .right h2, .right p {
   margin: 0;
-  color: #515151;
+  color: #333;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-align: center;
+}
+
+/* Slideshow styling */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Responsive design adjustments */
@@ -133,7 +173,7 @@
   }
 
   .title {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -143,7 +183,7 @@
   }
 
   .title {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .specs p {
@@ -161,7 +201,7 @@
   }
 
   .title {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .specs p {
@@ -186,3 +226,4 @@
   text-decoration: none;
   color: inherit;
 }
+
