@@ -52,8 +52,8 @@ const CarCard = ({ car }) => {
           <h2>Price: ${car.price}</h2>
           <div className={styles.contact}>
             <h2>Contact Now!</h2>
-            <p>Call:<a href="tel:+91 7839219042">+91 78392 19042</a></p>
-            <p>Email:<a href="mailto: garrymotors72@gmail.com">garrymotors72@gmail.com</a></p>
+            <p>Call:<a href="tel:+1 (253) 886-4485">+1 (253) 886-4485</a></p>
+            <p>Email:<a href="mailto:Garrymotors.LLC@gmail.com">Garrymotors.LLC@gmail.com</a></p>
           </div>
         </div>
       </div>
