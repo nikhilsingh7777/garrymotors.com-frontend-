@@ -46,7 +46,7 @@ const Navbar = () => {
           </div>
           <div className={styles.topdiv}>
             <img src="https://img.icons8.com/?size=100&id=19100&format=png&color=22ABC3" alt="time" width={18} />
-            <p>Opening Hours <span className={styles.topopt}>All days: 10am - 8pm</span></p>
+            <p>Opening Hours <span className={styles.topopt}>All days: 10am - 6pm</span></p>
           </div>
         </div>
       </div>
