@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const fadeImages = [
   {
-    url: '/s1.png', // Use relative paths for static files in the 'public' directory
+    url: '/s1ref.png', 
   },
   {
     url: '/s2.png',
@@ -14,13 +14,6 @@ const fadeImages = [
   {
     url: '/s3.png',
   },
-  // Uncomment and replace with your actual image URLs if needed
-  // {
-  //   url: 'https://images.pexels.com/photos/326259/pexels-photo-326259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  // },
-  // {
-  //   url: 'https://images.pexels.com/photos/712618/pexels-photo-712618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  // },
 ];
 
 const buttonStyle = {
@@ -55,7 +48,7 @@ const Slideshow = () => {
             <Image
               src={fadeImage.url}
               alt={`Slide ${index + 1}`}
-              width={800} // Adjust the width and height as per your design requirements
+              width={800} 
               height={450}
               layout="responsive"
             />
